@@ -1,3 +1,100 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: "Roboto", sans-serif; }
+
+.application {
+  max-width: 600px;
+  width: 90%;
+  margin: 42px auto 0; }
+
+.header {
+  color: white;
+  text-align: center;
+  background: #333;
+  border-radius: 9px 9px 0 0;
+  border-bottom: 2px solid #AAA;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 12px 6px; }
+  .header h1 {
+    letter-spacing: 2px;
+    font-size: 24px;
+    font-weight: 700; }
+
+.players {
+  background: #444;
+  padding-bottom: 15px;
+  border-radius: 0 0 9px 9px; }
+
+.player {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #AAA; }
+
+.player_name {
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding-left: 12px; }
+
+.counter .counter_action, .counter .counter_score {
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+  font-weight: 700; }
+.counter .counter_action {
+  align-self: stretch;
+  border: none;
+  padding: 18px;
+  transition: background .4s ease-in-out; }
+  .counter .counter_action.decrement {
+    background: #ff2e2e; }
+    .counter .counter_action.decrement:hover {
+      background: #d10000; }
+  .counter .counter_action.increment {
+    background: #009f00; }
+    .counter .counter_action.increment:hover {
+      background: #006100; }
+.counter .counter_score {
+  padding: 18px; }
 
 /*# sourceMappingURL=styles.css.map */

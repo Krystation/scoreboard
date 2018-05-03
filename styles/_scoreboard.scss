@@ -1,0 +1,91 @@
+$primary_font: 'Roboto', sans-serif;
+body{
+  font-family: $primary_font;
+}
+.application{
+  max-width: 600px;
+  width: 90%;
+
+  margin: 42px auto 0;
+}
+.header{
+  color: white;
+  text-align: center;
+
+  background: #333;
+
+  border-radius: 9px 9px 0 0;
+  border-bottom: 2px solid #AAA;
+
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+
+  padding: 12px 6px;
+  h1{
+    letter-spacing: 2px;
+    font:{
+      size: 24px;
+      weight: 700;
+    }
+  }
+}
+
+.players{
+  background: #444;
+  padding-bottom: 15px;
+  border-radius: 0 0 9px 9px;
+}
+
+.player{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #AAA;
+}
+
+.player_name{
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+
+  padding-left: 12px;
+}
+
+.counter{
+  .counter_action, .counter_score{
+    display: inline-block;
+    color: white;
+    font:{
+      size: 18px;
+      weight: 700;
+    }
+  }
+  .counter_action{
+    align-self: stretch;
+    border: none;
+
+    padding: 18px;
+
+    transition: background .4s ease-in-out;
+
+    &.decrement{
+      background: lighten(red, 9%);
+      &:hover{
+        background: darken(red, 9%);
+      }
+    }
+    &.increment{
+      background: lighten(green, 6%);
+      &:hover{
+        background: darken(green, 6%);
+      }
+    }
+  }
+
+  .counter_score{
+    padding: 18px;
+  }
+}
